@@ -1,7 +1,5 @@
 # vue-markdown-loader
 
-[简体中文](./README-CN.md)
-
 This is a webpack loader that can load markdown files. With proper configuration, the loader can convert markdown file content into `vue sfc` component object or into html string, so it can be chained with vue-loader or html-loader.
 
 The project is inspired by [vuepress](https://github.com/vuejs/vuepress), we reused most of its source code and made some improvements to allow it being used in non-vuepress project.
@@ -13,7 +11,7 @@ If you are interested in Vuepress, please visit [vuepress](https://github.com/vu
 ## Install
 
 ```bash
-npm i @tianyong90/vue-markdown-loader -S
+npm i vue-markdown-loader -S
 ```
 
 ## Usage

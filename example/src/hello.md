@@ -1,9 +1,9 @@
 ---
-title: '@tianyong90/vue-markdown-loader example'
+title: 'vue-markdown-loader example'
 lang: zh-CN
 ---
 
-# @tianyong90/vue-markdown-loader example
+# vue-markdown-loader example
 
 [[toc]]
 
@@ -11,7 +11,7 @@ lang: zh-CN
 
 ## paragraph
 
-Hello, **@tianyong90/vue-markdown-loader** is powerful.
+Hello, **vue-markdown-loader** is powerful.
 
 Enjoy coding!
 
@@ -46,7 +46,7 @@ console.log(a + b)
 ```
 
 ```bash
-yarn add @tianyong90/vue-markdown-loader
+yarn add vue-markdown-loader
 ```
 
 ```php{1,3}
@@ -67,7 +67,7 @@ var_dump($msg);
 ## custom block
 
 ::: tip
-Hello, thanks for using @tianyong90/vue-markdown-loader.
+Hello, thanks for using vue-markdown-loader.
 :::
 
 ::: danger STOP

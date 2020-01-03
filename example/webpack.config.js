@@ -69,8 +69,7 @@ module.exports = {
             }
           },
           {
-            // 使用 @tianyong90/vue-markdown-loader
-            loader: '@tianyong90/vue-markdown-loader',
+            loader: 'vue-markdown-loader',
             options: {
               // sourceDir: ''
               contentCssClass: 'markdown-body',
@@ -104,7 +103,7 @@ module.exports = {
   stats: 'minimal',
   plugins: [
     new HtmlWebpackPlugin({
-      title: '@tianyong90/vue-markdown-loader example',
+      title: 'vue-markdown-loader example',
       filename: 'index.html',
       template: path.resolve(__dirname, 'index.html'),
       inject: true,

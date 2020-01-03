@@ -10,6 +10,6 @@ new Vue({
   },
 
   data: {
-    pageTitle: '@tianyong90/vue-markdown-loader demo',
+    pageTitle: 'vue-markdown-loader demo',
   },
 })
