@@ -5,16 +5,16 @@ import { PLUGINS, REQUIRED_PLUGINS } from './lib/constant'
 import highlightLines from './lib/highlightLines'
 import preWrapperPlugin from './lib/preWrapper'
 import lineNumbersPlugin from './lib/lineNumbers'
-import containersPlugin from './lib/containers'
 import anchorPlugin from 'markdown-it-anchor'
 import emojiPlugin from 'markdown-it-emoji'
 import tocPlugin from 'markdown-it-table-of-contents'
+import attrsPlugin from 'markdown-it-attrs'
 import hash from 'hash-sum'
 import chalk from 'chalk'
 import { logger, slugify } from '../utils'
 
 export default (options: any = {}) => {
-  const { anchor, toc, plugins, lineNumbers, beforeInstantiate, afterInstantiate } = options
+  const { anchor, toc, plugins, customBlockOptions, lineNumbers, beforeInstantiate, afterInstantiate } = options
 
   const config = new Config()
 
@@ -36,7 +36,7 @@ export default (options: any = {}) => {
     .end()
 
     .plugin(PLUGINS.PRE_WRAPPER)
-    .use(containersPlugin)
+    .use(attrsPlugin)
     .end()
 
     .plugin(PLUGINS.ANCHOR)
